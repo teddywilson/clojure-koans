@@ -16,6 +16,9 @@
   (= [95 96 97 98 99]
      (drop 95 (range 100)))
 
+  ;"Iteration provides an infinite lazy sequence"
+  ;(= [2 4 8 16 32 64 128 256] (take 8 (iterate (fn [x] (* x 2)) 1)))
+
   "Repetition is key"
   (= [:a :a :a :a :a :a :a :a :a :a]
      (repeat 10 :a))
